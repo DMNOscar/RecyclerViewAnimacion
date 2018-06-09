@@ -42,7 +42,7 @@ public class AdaptadorCatalago extends RecyclerView.Adapter<AdaptadorCatalago.Ar
         ModeloArticulo articuloItem = items.get(position);
 
         viewHolder.nombreProducto.setText(articuloItem.getNombreProducto());
-        viewHolder.precioProducto.setText(articuloItem.getPrecioProducto());
+        viewHolder.precioProducto.setText("$"+articuloItem.getPrecioProducto());
         viewHolder.marcaProducto.setText(articuloItem.getMarcaProducto());
         viewHolder.modeloProducto.setText(articuloItem.getModeloProducto());
         //viewHolder.btnAgregarCarrito.(articuloItem.getNombreProducto());

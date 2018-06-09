@@ -36,16 +36,17 @@ public class ActivityDetallesProducto extends AppCompatActivity {
 
 
     private void setupViews(int position) {
-        TextView nombre = (TextView) findViewById(R.id.detallesNombre);
-        TextView precio = (TextView) findViewById(R.id.detallesPrecio);
-        TextView descripcion = (TextView) findViewById(R.id.destallesDescripcion);
-        ImageView image = (ImageView) findViewById(R.id.detallesImagen);
+        TextView nombre =  findViewById(R.id.detallesNombre);
+        TextView precio =  findViewById(R.id.detallesPrecio);
+        TextView descripcion =  findViewById(R.id.destallesDescripcion);
+        ImageView image =  findViewById(R.id.detallesImagen);
 
         ModeloArticulo detallesArticulo = Articulos.getArticuloPossicion(position);
         nombre.setText(detallesArticulo.getNombreProducto());
         precio.setText("$"+detallesArticulo.getPrecioProducto());
         descripcion.setText(detallesArticulo.getModeloProducto());
         Glide.with(this).load(detallesArticulo.getImagenProduto()).into(image);
+
     }
 
     public static void launch(Activity context, int position, View sharedView) {

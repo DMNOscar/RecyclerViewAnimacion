@@ -54,38 +54,38 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/primary_text"
                 android:textSize="21sp"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/detallesPrecio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Precio"
-                android:textSize="18dp"
-                android:textColor="@color/accentColor"
                 android:layout_marginTop="18dp"
+                android:text="Precio"
+                android:textColor="@color/accentColor"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/destallesTituloDescripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
                 android:layout_marginTop="18dp"
                 android:text="Descripción"
-                android:textColor="@color/primary_text" />
+                android:textColor="@color/primary_text"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/destallesDescripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
                 android:text="Descripción"
                 android:textColor="@color/primary_text"
-                android:textSize="16sp"
-                android:layout_marginTop="18dp"
-                />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
