@@ -7,6 +7,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.transition.Explode;
+import android.transition.Slide;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,6 @@ public class FragmentCatalogo extends Fragment {
     public LinearLayoutManager linearLayoutManager;
     public RecyclerView rcvCatalogo;
     private byte NUMERO_COMLUNAS_CATALOGO=2;
-
 
     @Nullable
     @Override
@@ -37,8 +37,8 @@ public class FragmentCatalogo extends Fragment {
     }
 
     private void setupWindowAnimations() {
-        getActivity().getWindow().setReenterTransition(new Explode());
-        getActivity().getWindow().setExitTransition(new Explode().setDuration(300));
+        getActivity().getWindow().setReenterTransition(new Explode().setDuration(300));//Cundo regresa a la ventana
+        getActivity().getWindow().setExitTransition(new Explode().setDuration(300));//Cuando sale de la ventana
     }
 
 }
