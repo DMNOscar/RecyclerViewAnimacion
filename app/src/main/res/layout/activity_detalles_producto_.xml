@@ -8,7 +8,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
+        android:layout_height="260dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <!-- Imagen del detalle -->
@@ -16,8 +16,8 @@
             android:id="@+id/detallesImagen"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:transitionName="compartir_imagen" />
-
+            android:transitionName="compartir_imagen"
+            />
 
     </android.support.design.widget.AppBarLayout>
     <!-- FAB -->
@@ -53,7 +53,7 @@
                 android:id="@+id/detallesNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre"
+                android:text="@string/nombre"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/primary_text"
                 android:textSize="21sp"
@@ -64,9 +64,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
-                android:text="Precio"
+                android:text="@string/precio"
                 android:textColor="@color/accentColor"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -74,16 +74,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
-                android:text="Descripción"
+                android:text="@string/descripcion"
                 android:textColor="@color/primary_text"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/destallesDescripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
-                android:text="Descripción"
                 android:textColor="@color/primary_text"
                 android:textSize="16sp" />
 
